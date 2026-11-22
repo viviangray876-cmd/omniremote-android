@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0F172A" android:padding="12dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Статус: не подключено" android:textColor="#38BDF8" android:textSize="16sp" android:textStyle="bold" />
+        <EditText android:id="@+id/relayInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="wss://home-pc.tail89b029.ts.net/ws" android:textColor="#FFFFFF" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/roomInput" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="home" android:textColor="#FFFFFF" />
+            <EditText android:id="@+id/tokenInput" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="my_secret_token" android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <Button android:id="@+id/btnConnect" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Подключиться" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnAcc" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Спец. возможности" />
+            <Button android:id="@+id/btnShare" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Экран телефона" />
+        </LinearLayout>
+        <ImageView android:id="@+id/pcScreen" android:layout_width="match_parent" android:layout_height="260dp" android:background="#020617" android:scaleType="fitCenter" android:layout_marginTop="8dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnPcOn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Экран ПК ВКЛ" />
+            <Button android:id="@+id/btnPcOff" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ВЫКЛ" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <EditText android:id="@+id/pcText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:hint="Текст на ПК..." android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnSendText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Ввод" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
